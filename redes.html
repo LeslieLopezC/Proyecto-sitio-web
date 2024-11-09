@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales - Cafetería El Rincón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMqT4d4eW9G5i9G5uG5k5u5c5d5c5d5c5d5c5" crossorigin="anonymous">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Estilos generales */
+        body {
+            font-family: 'Georgia', serif;
+            color: #1c1c1c;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        /* Encabezado */
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333333; /* Color gris */
+            text-align: center;
+            color: #fff;
+            font-weight: 300;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 300;
+            transition: color 0.3s, transform 0.3s;
+        }
+        header nav a:hover {
+            color: #f5f5f5; /* Color claro al pasar el cursor */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+        }
+        /* Título principal */
+        .main-title {
+            font-size: 3em;
+            margin: 30px 0;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        /* Sección de redes sociales */
+        .social-media-section {
+            max-width: 800px;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre los iconos */
+        }
+
+        .social-media a {
+          display: inline-block; /* Para poder aplicar el padding y efectos */
+         padding: 15px; /* Espacio alrededor del icono */
+         border-radius: 10px; /* Bordes redondeados para un efecto más suave */
+         transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para el sombreado y el aumento de tamaño */
+        }
+
+       .social-media a:hover {
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+         transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            background-color: #f5f5f5;
+            color: #1c1c1c;
+            width: 100%;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="fotos.html">Fotos</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="redes.html">Redes Sociales</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <!-- Título principal -->
+    <h1 class="main-title">Síguenos en Redes Sociales</h1>
+    <section class="social-media-section">
+        <h2>Conéctate con nosotros</h2>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="images/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cafetería El Rincón - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

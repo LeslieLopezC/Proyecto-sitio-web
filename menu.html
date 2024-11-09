@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería El Rincón - Menú</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Estilos generales */
+        body {
+            font-family: 'Georgia', serif; /* Tipo de letra */
+            color: #1c1c1c;
+            background-color: #f5f5f5; /* Color de fondo */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        /* Encabezado */
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #333333; /* Color gris */
+            text-align: center;
+            color: #fff;
+            font-weight: 300;
+        }
+        header nav ul {
+            list-style: none; /* Sin viñetas */
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline; /* Mostrar en línea */
+            margin: 0 15px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 300;
+            transition: color 0.3s, transform 0.3s;
+        }
+        header nav a:hover {
+            color: #e0e0e0; /* Color claro al pasar el cursor */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+        }
+        /* Título principal */
+        .main-title {
+            font-size: 3em;
+            margin: 30px 0;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        /* Sección de bienvenida */
+        .intro {
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 1.2em;
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+        /* Estilo de galería de cafés y postres */
+        .menu-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .menu-item {
+            background-color: #eaeaea; /* Fondo gris claro */
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 200px; /* Ancho fijo para cada item */
+        }
+        .menu-item:hover {
+            background-color: #d0d0d0; /* Color más oscuro al pasar el cursor */
+            transform: translateY(-3px); /* Efecto de elevación al pasar el cursor */
+        }
+        .menu-item img {
+            width: 100%; /* Imágenes responsivas */
+            border-radius: 10px;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            background-color: #f5f5f5;
+            color: #1c1c1c;
+            width: 100%;
+            margin-top: 30px;
+        }
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .menu-gallery {
+                padding: 0 10px; /* Espaciado en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="redes.html">Redes Sociales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 class="main-title">Nuestro Menú de Cafés</h1>
+    <section class="intro">
+        <h2>Tipos de Café que Ofrecemos</h2>
+        <p>En Cafetería El Rincón, tenemos una variedad de cafés para satisfacer todos los gustos. Aquí te presentamos algunos de nuestros favoritos:</p>
+    </section>
+    
+    <div class="menu-gallery">
+        <div class="menu-item">
+            <img src="images/espresso.jpg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>$50</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/americano.jpg" alt="Café Americano">
+            <h3>Café Americano</h3>
+            <p>$50</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/capuchino.jpg" alt="Capuchino">
+            <h3>Capuchino</h3>
+            <p>$50</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/latte.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <p>$50</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/macchiato.jpg" alt="Macchiato">
+            <h3>Macchiato</h3>
+            <p>$50</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/mocha.jpg" alt="Mocha">
+            <h3>Mocha</h3>
+            <p>$50</p>
+        </div>
+    </div>
+
+    <h1 class="main-title">Nuestros Postres</h1>
+    <section class="intro">
+        <h2>Deliciosos Postres para Acompañar tu Café</h2>
+        <p>Complementa tu experiencia con nuestros irresistibles postres:</p>
+    </section>
+    
+    <div class="menu-gallery">
+        <div class="menu-item">
+            <img src="images/tarta.jpg" alt="Pastel de Chocolate">
+            <h3>Pastel de Chocolate</h3>
+            <p>$60</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/cheesecake.jpg" alt="Cheesecake">
+            <h3>Cheesecake</h3>
+            <p>$60</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/galletas.jpg" alt="Galletas Caseras">
+            <h3>Galletas Caseras</h3>
+            <p>$30</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/brownie.jpg" alt="Brownie">
+            <h3>Brownie</h3>
+            <p>$50</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/fruta.jpg" alt="Fruta Fresca">
+            <h3>Fruta Fresca</h3>
+            <p>$40</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/pastel.jpg" alt="Pastel de Vainilla">
+            <h3>Pastel de Vainilla</h3>
+            <p>$50</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cafetería El Rincón - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
